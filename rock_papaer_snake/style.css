@@ -1,0 +1,84 @@
+.container {
+  width: 500px;
+  height: 500px;
+  border: 2px solid black;
+  margin: 0 auto;
+  position: relative;
+}
+.buttons {
+  position: absolute;
+  display: inline-block;
+  margin: 0 auto;
+  bottom: 20px;
+  left: calc((500px - 158px) / 2);
+}
+.button {
+  display: inline-block;
+  cursor: pointer;
+}
+
+.player_box,
+.computer_box {
+  display: inline-block;
+  background-color: bisque;
+  width: 170px;
+  height: 160px;
+}
+.computer_box p,
+.player_box p {
+  text-align: center;
+}
+
+img {
+  width: 50px;
+}
+
+figure {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.dask-board {
+  width: 344px;
+  margin: 0 auto;
+}
+
+.chingachung_left,
+.chingachung_right {
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  display: inline-block;
+}
+.chingachung_right {
+  right: 120px;
+}
+.chingachung_left {
+  left: 120px;
+}
+
+@-webkit-keyframes slide-bottom {
+  0% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+  }
+  100% {
+    -webkit-transform: translateY(60px);
+    transform: translateY(60px);
+  }
+}
+@keyframes slide-bottom {
+  0% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+  }
+  100% {
+    -webkit-transform: translateY(60px);
+    transform: translateY(60px);
+  }
+}
+.anim_left,
+.anim_right {
+  width: 100px;
+}
